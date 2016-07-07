@@ -7,3 +7,7 @@
   <iframe allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="./build/player.html?src=http://www.w3school.com.cn/i/movie.ogg"></iframe>
 </div>
 ```
+
+### CDN
+
+* http://cdn.darlin.me/cdn/player/v1.1.2/player.html
