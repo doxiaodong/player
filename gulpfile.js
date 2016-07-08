@@ -32,7 +32,12 @@ gulp.task('video-swf', function () {
     .pipe(gulp.dest('build'));
 });
 
+gulp.task('fonts', function () {
+  return gulp.src('node_modules/video.js/dist/font/*')
+    .pipe(gulp.dest('build/font'));
+});
+
 // gulp 4.0
-gulp.task('build', gulp.parallel('html', 'video-swf'));
+gulp.task('build', gulp.parallel('html', 'video-swf', 'fonts'));
 
 gulp.task('default', gulp.series('clean', 'build'));

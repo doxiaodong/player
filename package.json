@@ -1,6 +1,6 @@
 {
   "name": "video-player",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "github:gulpjs/gulp#4.0",
