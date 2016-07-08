@@ -7,7 +7,7 @@
   <iframe
     allowfullscreen
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="./build/player.html?src=http://www.w3school.com.cn/i/movie.ogg&autoplay=true">
+    src="./build/player.html?src=http://cdn.darlin.me/source/test.flv&autoplay=true">
   </iframe>
 </div>
 ```
@@ -17,7 +17,7 @@
 
 ### CDN
 
-* http://cdn.darlin.me/cdn/player/v1.1.2/player.html
+* http://cdn.darlin.me/cdn/player/v1.2.0/player.html
 
 ### Example
 

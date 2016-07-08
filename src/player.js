@@ -22,15 +22,20 @@ function extend(target, source) {
   return target;
 }
 
+videojs.options.flash.swf = "./video-js.swf"
+
 var query = window.location.search.replace('?', '');
 var params = queryToJson(query);
 var video = document.getElementsByTagName('video')[0];
-video.src = params.src;
+var source = document.createElement('source');
+source.src = params.src;
+params.src = undefined; // clear params.src
+video.appendChild(source)
 
 var options = {
-  "controls": true,
-  "autoplay": false,
-  "preload": "auto"
+  'controls': true,
+  'autoplay': false,
+  'preload': 'auto'
 };
 options = extend(options, params);
 

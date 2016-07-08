@@ -30,7 +30,7 @@ gulp.task('clean', function (done) {
 gulp.task('video-swf', function () {
   return gulp.src('node_modules/video.js/dist/video-js.swf')
     .pipe(gulp.dest('build'));
-})
+});
 
 // gulp 4.0
 gulp.task('build', gulp.parallel('html', 'video-swf'));
