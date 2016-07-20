@@ -9,6 +9,7 @@ function queryToJson(query) {
       ret[k] = v;
     }
   });
+  ret.src = decodeURIComponent(ret.src);
   return ret;
 }
 
