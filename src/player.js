@@ -29,6 +29,7 @@ var query = window.location.search.replace('?', '');
 var params = queryToJson(query);
 var video = document.getElementsByTagName('video')[0];
 var source = document.createElement('source');
+source.type = 'video/x-flv';
 source.src = params.src;
 params.src = undefined; // clear params.src
 video.appendChild(source)
@@ -36,7 +37,8 @@ video.appendChild(source)
 var options = {
   'controls': true,
   'autoplay': false,
-  'preload': 'auto'
+  'preload': 'auto',
+  'techOrder': ['html5', 'flvjs']
 };
 options = extend(options, params);
 

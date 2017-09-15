@@ -28,7 +28,7 @@ gulp.task('clean', function (done) {
 });
 
 gulp.task('video-swf', function () {
-  return gulp.src('node_modules/video.js/dist/video-js.swf')
+  return gulp.src('node_modules/videojs-swf/dist/video-js.swf')
     .pipe(gulp.dest('build'));
 });
 

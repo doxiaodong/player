@@ -1,6 +1,6 @@
-### A web player based on video.js
+### A web player based on video.js and flv.js
 
-### Useage
+### Usage
 
 ```html
 <div style="position: relative; width: 100%; padding-top: 56.25%; height: 0; overflow: hidden;">
@@ -17,7 +17,7 @@
 
 ### CDN
 
-* http://cdn.darlin.me/cdn/player/v1.2.2/player.html
+* http://cdn.darlin.me/cdn/player/v1.3.0/player.html
 
 ### Example
 
