@@ -17,7 +17,7 @@
 
 ### CDN
 
-* http://cdn.darlin.me/cdn/player/v1.3.0/player.html
+* http://cdn.darlin.me/cdn/player/v1.4.0/player.html
 
 ### Example
 
