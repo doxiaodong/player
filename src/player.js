@@ -1,8 +1,8 @@
 function queryToJson(query) {
-  var arr = query.split('&');
+  var arr = query.split("&");
   var ret = {};
-  arr.forEach(function (value) {
-    var param = value.split('=');
+  arr.forEach(function(value) {
+    var param = value.split("=");
     var k = param[0];
     var v = param[1];
     if (ret[k] === undefined) {
@@ -23,23 +23,28 @@ function extend(target, source) {
   return target;
 }
 
-videojs.options.flash.swf = "./video-js.swf"
+function getType(src) {
+  if (/\.flv$/.test(src)) {
+    return "video/x-flv";
+  }
+  return "video/mp4";
+}
 
-var query = window.location.search.replace('?', '');
+var query = window.location.hash.replace("#", "");
 var params = queryToJson(query);
-var video = document.getElementsByTagName('video')[0];
-var source = document.createElement('source');
-source.type = 'video/x-flv';
+var video = document.getElementsByTagName("video")[0];
+var source = document.createElement("source");
+source.type = getType(params.src);
 source.src = params.src;
 params.src = undefined; // clear params.src
-video.appendChild(source)
+video.appendChild(source);
 
 var options = {
-  'controls': true,
-  'autoplay': false,
-  'preload': 'auto',
-  'techOrder': ['html5', 'flvjs']
+  controls: true,
+  autoplay: false,
+  preload: "auto",
+  techOrder: ["html5", "flvjs"]
 };
 options = extend(options, params);
 
-var player = videojs('PLAYER', options);
+var player = videojs("PLAYER", options);

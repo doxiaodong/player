@@ -2,18 +2,15 @@ body {
   margin: 0;
 }
 
+:focus {
+  outline: none;
+}
+
 .video-js {
-  width: 100%!important;
-  height: 100%!important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
 }
-
-.video-js .vjs-tech,
-.video-js.vjs-fill {
-  height: auto;
-}
-
-.video-js {padding-top: 56.25%}
-.vjs-fullscreen {padding-top: 0px}
 
 .video-js .vjs-big-play-button {
   top: 0;
