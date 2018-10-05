@@ -17,7 +17,7 @@
 
 ### CDN
 
-* http://cdn.darlin.me/cdn/player/v1.4.0/player.html
+* https://img.tristana.cc/player/1.6.1/player.html
 
 ### Example
 
